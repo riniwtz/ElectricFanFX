@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.riniwtz.electricfan.FanController">
+   <children>
+      <ImageView fitHeight="292.0" fitWidth="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/efan.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="1920.0" spacing="15.0">
+         <children>
+            <ToggleButton fx:id="close" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleOff" text="0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="toggleOneBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleOne" text="1" textAlignment="CENTER" wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="toggleTwoBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleTwo" text="2" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="toggleThreeBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleThree" text="3" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="toggleFourBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleFour" text="4" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </ToggleButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>
